@@ -38,7 +38,7 @@ General:
 [MDN: Developer Mozilla](https://developer.mozilla.org/)  
 [Stack Overflow](https://stackoverflow.com/)  
 
-Styling:
+Styling:  
 [React Bootstrap](https://react-bootstrap.github.io/)  
 [Bootstrap Cheat Sheet](https://hackerthemes.com/bootstrap-cheatsheet/)  
 
