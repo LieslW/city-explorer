@@ -42,6 +42,9 @@ Styling:
 [React Bootstrap](https://react-bootstrap.github.io/)  
 [Bootstrap Cheat Sheet](https://hackerthemes.com/bootstrap-cheatsheet/)  
 
+City Icon:  
+[Icon-Icons](https://icon-icons.com/)  
+
 ________________________________________________________________________________  
 
 Name of feature: LocationIQ API and Axios Library  
