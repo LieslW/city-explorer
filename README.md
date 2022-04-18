@@ -56,3 +56,9 @@ Start time: 1 pm
 Finish time: TBD
 
 Actual time needed to complete: TBD  
+
+![WRCC Day One: Stanley K. Wilder and Simon Son](WRRC/WRRC(1)301d84.png)  
+
+______________________________________________________________________________  
+
+
