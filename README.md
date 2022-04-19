@@ -1,7 +1,7 @@
 # Project Name
 
-**Author**: Liesl White
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Author**: Liesl White  
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)  
 
 ## Overview  
 
@@ -13,13 +13,13 @@ City Explorer is an interactive application which allows the user to access mult
 
 ## Architecture  
 
-To start, I built the City Explorer application using HTML, CSS, and JavaScript languages.
-To build the foundation for this application, I used React, an open-source front-end JavaScript library, on Visual Studio Code. This was connected to my personal github to save and track all versions.
-For deployment, I used Netlify.
-For API calls, I utilized the axios library to faciliate easy access to my various APIs.
-For my data, I used various APIs, such as:
+To start, I built the City Explorer application using HTML, CSS, and JavaScript languages.  
+To build the foundation for this application, I used React, an open-source front-end JavaScript library, on Visual Studio Code. This was connected to my personal github to save and track all versions.  
+For deployment, I used Netlify.  
+For API calls, I utilized the axios library to faciliate easy access to my various APIs.  
+For my data, I used various APIs, such as:  
 
-- LocationIQ: cities, exact lat and long, and map view
+- LocationIQ: cities, exact lat and long, and map view  
 
 Finally, for my styling, other than CSS I also used the React Bootstrap, a component based library.  
 
