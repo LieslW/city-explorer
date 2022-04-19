@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal } from 'bootstrap';
+import { Modal } from 'react-bootstrap';
 
 class ErrorModal extends React.Component {
     render() {

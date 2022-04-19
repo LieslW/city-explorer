@@ -3,6 +3,17 @@ import { Form, FormGroup } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 
 class CityForm extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            search: 'City of Atlantis',
+        };
+    };
+
+    citySearch = () => {
+        this.props.handleCitySubmit(this.state.search);
+    }
+
     render() {
         return(
             <>
@@ -11,9 +22,13 @@ class CityForm extends React.Component {
                     <Form.Label>
                         Pick a City:
                     </Form.Label>
-                        <Form.Control type="text" onInput={this.handleCityInput}/>
-                        <input type="text" onInput={this.props.handleCityInput} name="city" />
-                <Button variant="primary" type="submit">Explore!</Button>
+                        <Form.Control type="text" onChange={(e) => this.setState({search: e.target.value})}/>
+                <Button 
+                variant="primary" 
+                type="submit"
+                onClick={this.citySearch}>
+                    Explore!
+                </Button>
                 </FormGroup>
             </Form>
             </>
