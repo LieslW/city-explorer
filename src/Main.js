@@ -8,7 +8,8 @@ class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            locationData: [],
+            mapUrl: '',
+            // locationData: [],
             city: '',
             cityData: {},
             error: false,
@@ -80,6 +81,7 @@ class Main extends React.Component {
         // })
         // console.log('test:', cityList);
         // console.log('display test: ', this.state.cityList);
+        let mapUrl = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${this.state.cityData.lat},${this.state.cityData.lon}&zoom=15`;
         return (
             <>
                 {/* <h1>Data from an API</h1>
@@ -93,28 +95,32 @@ class Main extends React.Component {
                     </Form.Label>
                         <Form.Control type="text" onInput={this.handleCityInput}/>
                         {/* <input type="text" onInput={this.handleCityInput} name="city" /> */}
-                    {/* <Button variant="primary" type="submit">Explore!</Button> */}
+                {/* <Button variant="primary" type="submit">Explore!</Button> */}
                 {/* </Form.Group> */}
                 {/* </Form> */}
                 <form onSubmit={this.handleCitySubmit}>
                     <label>
-                        Pick a City: 
-                        <input type="text" onInput={this.handleCityInput} name="city"/>
+                        Pick a City:
+                        <input type="text" onInput={this.handleCityInput} name="city" />
                     </label>
                     <button type="submit">Explore!</button>
                 </form>
-        {
-            this.state.error
-                ?
-                <p>{this.state.errorMessage}</p>
-                :
-                <ul>
-                    {this.state.cityData.display_name}
-                    {this.state.cityData.lat}
-                    {this.state.cityData.lon}
-                </ul>
-        }
-        {/* <main>
+                {
+                    this.state.error
+                        ?
+                        <p>{this.state.errorMessage}</p>
+                        :
+                        <ul>
+                            <img
+                                src={mapUrl}
+                                alt={this.state.cityData.display_name}
+                            />
+                            {this.state.cityData.display_name}
+                            {this.state.cityData.lat}
+                            {this.state.cityData.lon}
+                        </ul>
+                }
+                {/* <main>
                     <p>Site in progress</p>
                 </main> */}
             </>
