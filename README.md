@@ -61,4 +61,16 @@ Actual time needed to complete: TBD
 
 ______________________________________________________________________________  
 
+Name of feature: Server and Weather Data  
 
+Estimate of time needed to complete: 3 hours  
+
+Start time: 3:30pm  
+
+Finsih Time: TBD
+
+Actual time needed to complete: TBD  
+
+![WRCC Day Two: Kyle Honaker](WRRC/WRCC(2)301d84.png)  
+
+_____________________________________________________________________________
