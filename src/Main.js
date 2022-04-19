@@ -1,8 +1,8 @@
 import React from 'react';
 import './Main.css';
 import axios from 'axios';
-import { Form } from 'react-bootstrap';
-import { Button } from 'bootstrap';
+// import { Form } from 'react-bootstrap';
+// import { Button } from 'bootstrap';
 
 class Main extends React.Component {
     constructor(props) {
