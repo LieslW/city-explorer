@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css';
-import CityForm from './CityForm';
-import ErrorModal from './ErrorModal';
 import Header from './Header';
-// import Main from './Main';
+import CityForm from './CityForm';
 import ResultsCard from './ResultsCard';
+import ErrorModal from './ErrorModal';
 import Footer from './Footer';
 import axios from 'axios';
 
@@ -13,10 +12,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mapUrl: '',
-      // locationData: [],
       city: '',
-      cityData: {},
+      // mapUrl: '',
+      cityData: 0,
       error: false,
       errorMessage: 'None',
       showModal: false,
@@ -43,38 +41,56 @@ class App extends React.Component {
     })
   }
 
+
   handleCitySubmit = async (e) => {
     e.preventDefault();
     try {
+      // console.log('test:', this.state.city);
       let url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.city}&format=json`;
       let cityData = await axios.get(url);
-      console.log(cityData.data[0]);
+      // console.log(cityData.data[0]);
       this.setState({
         cityData: cityData.data[0]
       });
     } catch (error) {
-      console.log('error: ', error.response);
+      console.log('error: ', error);
       this.setState({
         error: true,
-        errorMessage: `An Error Occurred: ${error.response.status}`
+        showModal: true, 
+        errorMessage: `An Error Occurred: ${error.message}`
       })
     }
   }
 
+  
   render() {
+    // let cityList = this.state.cityData.map((city, idx) => {
+    //   console.log("index: ", idx);
+    //   return(
+    //     <ResultsCard
+    //     key={idx}
+    //     city={city}
+    //     />
+    //     ) 
+    //   });
+      // console.log('test: ', this.state.cityData);
+      // console.log('app state', this.state);
     return (
       <>
-      <Header />
+        <Header />
         <CityForm
-          handleSubmit={this.handleCityInput}
+          handleInput={this.handleCityInput}
           handleCitySubmit={this.handleCitySubmit}
         />
-        <ResultsCard
-          mapUrl={this.state.mapUrl}
-        />
-        <main>
-          {}
-        </main>
+        {this.state.cityData ? 
+        <ResultsCard 
+        name={this.state.cityData.display_name}
+        lat={this.state.cityData.lat}
+        lon={this.state.cityData.lon}
+        /> : null }
+        {/* <main>
+            {cityList}
+        </main> */}
         <ErrorModal
           error={this.state.error}
           errorMessage={this.state.errorMessage}
@@ -82,7 +98,6 @@ class App extends React.Component {
           openModal={this.openModal}
           hideModal={this.hideModal}
         />
-        {/* <Main /> */}
         <Footer />
       </>
     )

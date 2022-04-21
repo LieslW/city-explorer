@@ -1,32 +1,33 @@
 import React from 'react';
 import { Form, FormGroup } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
+import './CityForm.css';
 
 class CityForm extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            search: 'City of Atlantis',
-        };
-    };
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+            // search: 'City of Atlantis',
+    //     };
+    // };
 
-    citySearch = () => {
-        this.props.handleCitySubmit(this.state.search);
-    }
+    // citySearch = () => {
+    //     this.props.handleCitySubmit(this.state.search);
+    // }
 
     render() {
         return(
             <>
-            <Form>
+            <Form className="city-form">
                 <FormGroup onSubmit={this.props.handleCitySubmit}>
                     <Form.Label>
                         Pick a City:
                     </Form.Label>
-                        <Form.Control type="text" onChange={(e) => this.setState({search: e.target.value})}/>
+                        <Form.Control type="text" onChange={this.props.handleInput}/>
                 <Button 
                 variant="primary" 
                 type="submit"
-                onClick={this.citySearch}>
+                onClick={this.props.handleCitySubmit}>
                     Explore!
                 </Button>
                 </FormGroup>
