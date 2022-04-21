@@ -53,9 +53,9 @@ Estimate of time needed to complete: 4 hours
 
 Start time: 1 pm
 
-Finish time: TBD
+Finish time: Wednesday
 
-Actual time needed to complete: TBD  
+Actual time needed to complete: A couple days  
 
 ![WRCC Day One: Stanley K. Wilder and Simon Son](WRRC/WRRC(1)301d84.png)  
 
