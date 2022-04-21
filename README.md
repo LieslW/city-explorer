@@ -79,6 +79,8 @@ Name of feature: Movie Api
 
 Estimate of time needed to complete: 2 1/2 hours
 
+Start Time: TBD
+
 Finish Time: TBD
 
 Actual time needed to complete: TBD  
