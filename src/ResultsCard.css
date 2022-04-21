@@ -1,0 +1,26 @@
+.card {
+    width: 15vw;
+    height: 50vh;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.card-img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.card-title {
+    font-size: 1.5vw;
+}
+
+.card-body {
+    overflow: auto;
+}
+
+.card-text {
+    font-size: 1.2vw;
+}
