@@ -99,4 +99,3 @@ Finish time: TBD
 Actual time needed to complete: TBD  
 
 ![WRCC Day Four: Raul Zarate](WRRC/WRCC(4)301d84.jpg)  
-
