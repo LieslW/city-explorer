@@ -77,4 +77,10 @@ _____________________________________________________________________________
 
 Name of feature: Movie Api  
 
-Estimate of time needed to complete:
+Estimate of time needed to complete: 2 1/2 hours
+
+Finish Time: TBD
+
+Actual time needed to complete: TBD  
+
+![WRCC Day Three: Jason Wilson](WRRC/WRCC(3)301d84.png)  
