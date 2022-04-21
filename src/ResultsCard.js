@@ -1,4 +1,5 @@
 import React from 'react';
+import './ResultsCard.css';
 import { Card } from 'react-bootstrap';
 
 class ResultsCard extends React.Component {
@@ -15,6 +16,8 @@ class ResultsCard extends React.Component {
                     <Card.Title>{this.props.name}</Card.Title>
                     <Card.Text>
                         Latitude: {this.props.lat}
+                    </Card.Text>
+                    <Card.Text>
                         Longitude: {this.props.lon}
                     </Card.Text>
                     </Card.Body>
