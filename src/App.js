@@ -14,8 +14,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       city: '',
-      // mapUrl: '',
-      cityData: 0,
+      cityData: null,
       error: false,
       errorMessage: 'None',
       showModal: false,
@@ -46,10 +45,10 @@ class App extends React.Component {
   handleCitySubmit = async (e) => {
     e.preventDefault();
     try {
-      // console.log('test:', this.state.city);
+      
       let url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.city}&format=json`;
       let cityData = await axios.get(url);
-      // console.log(cityData.data[0]);
+
       this.setState({
         cityData: cityData.data[0]
       });
@@ -65,17 +64,7 @@ class App extends React.Component {
 
   
   render() {
-    // let cityList = this.state.cityData.map((city, idx) => {
-    //   console.log("index: ", idx);
-    //   return(
-    //     <ResultsCard
-    //     key={idx}
-    //     city={city}
-    //     />
-    //     ) 
-    //   });
-      // console.log('test: ', this.state.cityData);
-      // console.log('app state', this.state);
+
     return (
       <>
         <Header />
@@ -89,9 +78,7 @@ class App extends React.Component {
         lat={this.state.cityData.lat}
         lon={this.state.cityData.lon}
         /> : null }
-        {/* <main>
-            {cityList}
-        </main> */}
+
         <ErrorModal
           error={this.state.error}
           errorMessage={this.state.errorMessage}
