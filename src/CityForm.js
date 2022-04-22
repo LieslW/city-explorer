@@ -4,17 +4,6 @@ import { Button } from 'react-bootstrap';
 import './CityForm.css';
 
 class CityForm extends React.Component {
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-            // search: 'City of Atlantis',
-    //     };
-    // };
-
-    // citySearch = () => {
-    //     this.props.handleCitySubmit(this.state.search);
-    // }
-
     render() {
         return(
             <>

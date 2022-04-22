@@ -79,8 +79,23 @@ Name of feature: Movie Api
 
 Estimate of time needed to complete: 2 1/2 hours
 
+Start Time: TBD
+
 Finish Time: TBD
 
 Actual time needed to complete: TBD  
 
 ![WRCC Day Three: Jason Wilson](WRRC/WRCC(3)301d84.png)  
+____________________________________________________________________________
+
+Name of feature: Refactoring and Catch up
+
+Estimate of time needed to complete: 5 hours
+
+Start time: 2:30pm
+
+Finish time: TBD
+
+Actual time needed to complete: TBD  
+
+![WRCC Day Four: Raul Zarate](WRRC/WRCC(4)301d84.jpg)  
