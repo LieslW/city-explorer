@@ -41,7 +41,6 @@ class App extends React.Component {
     })
   }
 
-
   handleCitySubmit = async (e) => {
     e.preventDefault();
     try {
@@ -72,6 +71,7 @@ class App extends React.Component {
           handleInput={this.handleCityInput}
           handleCitySubmit={this.handleCitySubmit}
         />
+        
         {this.state.cityData ? 
         <ResultsCard 
         name={this.state.cityData.display_name}

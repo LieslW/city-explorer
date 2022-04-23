@@ -45,7 +45,9 @@ Styling:
 City Icon:  
 [Icon-Icons](https://icon-icons.com/)  
 
-________________________________________________________________________________  
+Deployment:  
+[Heroku Deployment](https://devcenter.heroku.com/articles/git)  
+_____________________________________________________________________________
 
 Name of feature: LocationIQ API and Axios Library  
 
@@ -59,7 +61,7 @@ Actual time needed to complete: A couple days
 
 ![WRCC Day One: Stanley K. Wilder and Simon Son](WRRC/WRRC(1)301d84.png)  
 
-______________________________________________________________________________  
+_____________________________________________________________________________
 
 Name of feature: Server and Weather Data  
 
@@ -86,7 +88,7 @@ Finish Time: TBD
 Actual time needed to complete: TBD  
 
 ![WRCC Day Three: Jason Wilson](WRRC/WRCC(3)301d84.png)  
-____________________________________________________________________________
+_____________________________________________________________________________
 
 Name of feature: Refactoring and Catch up
 
@@ -99,3 +101,17 @@ Finish time: TBD
 Actual time needed to complete: TBD  
 
 ![WRCC Day Four: Raul Zarate](WRRC/WRCC(4)301d84.jpg)  
+
+_____________________________________________________________________________
+
+Name of feature: Cache
+
+Estimate of time needed to complete: 3 hours
+
+Start Time: TBD
+
+Finish Time: TBD
+
+Actual time needed to complete: TBD
+
+![WRCC Day Five: Allen Brazier](WRRC/WRCC(5)301d84.jpeg)
